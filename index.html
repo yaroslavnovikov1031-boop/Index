@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Имена на карте Кемерова</title>
+<style>
+:root{--bg:#FAF7EF;--panel:#FFFFFF;--ink:#1F2A1C;--mute:#6C6F5E;--line:#E6DFCC;--olive:#4F6B3A;--gold:#B8963E;--nav:rgba(250,247,239,.92);--onolive:#FAF7EF;--bl:#F2EDDD;--br:#FBF9F3;--river:#D3E4E1;
+--h:#8E2F4D;--e:#5B4B8A;--g:#2B6F6A;--p:#C07A12;--i:#6E8A2E;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161814;--panel:#1F211C;--ink:#F1ECDD;--mute:#A9AA98;--line:#33362D;--olive:#A9C084;--gold:#D4B46A;--nav:rgba(22,24,20,.92);--onolive:#161814;--bl:#1B1D18;--br:#22251E;--river:#2D4846;--h:#E58AA0;--e:#B7A6E3;--g:#5FC7B6;--p:#F0B94A;--i:#B5D45C;color-scheme:dark}}
+:root[data-theme="dark"]{--bl:#1B1D18;--br:#22251E;--river:#2D4846;--bg:#161814;--panel:#1F211C;--ink:#F1ECDD;--mute:#A9AA98;--line:#33362D;--olive:#A9C084;--gold:#D4B46A;--nav:rgba(22,24,20,.92);--onolive:#161814;--bl:#1B1D18;--br:#22251E;--river:#2D4846;--h:#E58AA0;--e:#B7A6E3;--g:#5FC7B6;--p:#F0B94A;--i:#B5D45C;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Arial,Helvetica,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.nav{position:sticky;top:0;z-index:10;background:var(--nav);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{display:flex;gap:4px;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:6px;padding-bottom:6px}
+.nav a{color:var(--mute);text-decoration:none;padding:8px 10px;font-size:15px;border-radius:6px}.nav a:hover{color:var(--ink)}
+#theme{margin-left:auto;flex:none;border:0;background:none;color:var(--mute);font-size:19px;cursor:pointer;padding:6px 8px}
+.hero{padding:calc(64px + env(safe-area-inset-top,0px)) 0 54px;text-align:left}
+.eyebrow{color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:700}
+h1{font:400 clamp(34px,7vw,64px)/1.08 Georgia,"Times New Roman",serif;margin:14px 0 16px;color:var(--olive)}
+.hero p{margin:0 0 22px;max-width:52ch;color:var(--mute);font-size:19px}
+.hero a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+section{scroll-margin-top:56px;padding:54px 0}
+h2{font:400 clamp(26px,4.5vw,38px)/1.15 Georgia,serif;margin:0 0 8px;color:var(--ink)}
+h2:after{content:"";display:block;width:40px;height:2px;background:var(--gold);margin-top:12px}
+.lead{color:var(--mute);max-width:62ch;margin:14px 0 24px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 20px;font-size:14px;color:var(--mute)}
+.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:7px}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;align-items:start}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px}
+summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:12px;align-items:center}summary::-webkit-details-marker{display:none}
+summary:before{content:"";width:12px;height:12px;border-radius:50%;background:var(--c);flex:none}
+summary b{font:400 18px Georgia,serif;display:block}summary small{color:var(--mute);font-size:13px}
+summary:after{content:"+";margin-left:auto;color:var(--gold);font-size:22px}details[open] summary:after{content:"–"}
+details[open]{border-color:var(--c)}
+.body{padding:0 16px 16px;border-top:1px solid var(--line)}
+.dl{margin:0}.dl dt{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-top:12px}.dl dd{margin:2px 0 0}
+.tag{color:var(--c);font-weight:700}
+.links{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px}.links a{color:var(--olive);text-decoration:none;border-bottom:1px solid var(--gold)}
+.frame{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}
+.frame iframe{display:block;width:100%;height:420px;border:0}
+.note{color:var(--mute);font-size:14px;margin:10px 2px 0}
+.realmap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:8px;min-height:120px;margin-top:10px}
+a.t{color:var(--olive);text-decoration:none;border-bottom:1px solid var(--gold)}
+.tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--gold)}
+.tl li{position:relative;padding:0 0 22px 24px}.tl li:before{content:"";position:absolute;left:-5px;top:9px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.tl b{font:400 26px Georgia,serif;color:var(--olive);display:block;line-height:1.2}.tl span{color:var(--mute);font-size:14px}
+.ren{width:100%;border-collapse:collapse;margin-top:10px}.ren th,.ren td{text-align:left;padding:12px 4px;border-bottom:1px solid var(--line)}.ren th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:400}
+.q{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;max-width:620px}
+.q h3{font:400 22px Georgia,serif;margin:4px 0 6px}.q .tag{font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.opts{display:grid;gap:8px;margin:14px 0}.opts button,.q .again{font:inherit;color:var(--ink);text-align:left;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:10px 14px;cursor:pointer}
+.opts .ok{border-color:var(--g);box-shadow:inset 0 0 0 1px var(--g)}.opts .no{border-color:var(--h);box-shadow:inset 0 0 0 1px var(--h)}
+.q .again{display:inline-block;text-align:center}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.two{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center}@media(max-width:640px){.two{grid-template-columns:1fr}}
+.mono{width:104px;height:104px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;font:400 34px Georgia,serif;color:var(--olive)}
+.name{font:400 26px Georgia,serif;margin:0 0 6px}
+.about{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}@media(max-width:640px){.about{grid-template-columns:1fr}}
+.about img{width:156px;height:156px;image-rendering:pixelated;background:#fff;padding:7px;border:1px solid var(--line);border-radius:8px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-top:30px}.facts div{border-top:1px solid var(--gold);padding-top:10px;color:var(--mute);font-size:14px}.facts b{font:400 32px Georgia,serif;color:var(--olive);display:block}
+footer{border-top:1px solid var(--line);padding:26px 0 calc(26px + env(safe-area-inset-bottom,0px));color:var(--mute);font-size:14px}
+
+.layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:18px;align-items:start}
+@media(max-width:860px){.layout{grid-template-columns:1fr}}
+.map{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px;overflow-x:auto}
+.card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--c,var(--gold));border-radius:12px;padding:20px 22px;min-height:240px}
+.card h3{font:400 24px/1.25 Georgia,serif;margin:0 0 6px}
+svg{width:100%;height:auto;display:block}@media(max-width:860px){svg{min-width:680px}}
+.bl{fill:var(--bl)}.br{fill:var(--br)}.river{fill:none;stroke:var(--river);stroke-width:44;stroke-linecap:round}
+.bk{font:700 14px Arial,sans-serif;letter-spacing:.12em;fill:var(--mute)}.bk2{font:13px Arial,sans-serif;fill:var(--mute)}
+.ln{fill:none;stroke:var(--c);stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+.sg{cursor:pointer}.sg:hover .ln,.sg:focus .ln{stroke-width:12}.sg.sel .ln{stroke-width:13}.sg:focus{outline:none}
+.lb{font:700 14px Arial,sans-serif;fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:4px;pointer-events:none}
+.dot{fill:var(--panel);stroke:var(--c);stroke-width:6}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Разделы сайта"><div class="wrap">
+<a href="#streets">Схема</a><a href="#history">История</a><a href="#quiz">Викторина</a><a href="#author">Автор</a><a href="#about">О проекте</a><a href="#real">Карта Яндекса</a>
+<button id="theme" aria-label="Светлая или тёмная тема" title="Светлая или тёмная тема">☾</button></div></nav>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">Индивидуальный итоговый проект</div>
+<h1>Имена на карте<br>Кемерова</h1>
+<p>В честь кого или чего названы улицы нашего города. Нажмите на улицу на схеме и откройте её карточку.</p>
+<a href="#streets">Открыть схему ↓</a>
+</div></header>
+<hr class="rule">
+<main>
+<section id="streets"><div class="wrap">
+<h2>Схема улиц</h2>
+<p class="lead">Нажмите на улицу на схеме, чтобы открыть её карточку. Цвет линии показывает тип названия.</p>
+<div class="legend" id="legend"></div>
+<div class="layout">
+<div class="map"><svg viewBox="0 0 800 560" role="group" aria-label="Схема улиц Кемерова с левым и правым берегом Томи">
+<rect class="bl" width="800" height="560"/>
+<path class="br" d="M-20 40 C 140 90, 300 160, 440 215 C 560 270, 700 310, 820 320 L 820 0 L -20 0 Z"/>
+<path class="river" d="M820 320 C 700 310, 560 270, 440 215 S 140 90, -20 40"/>
+<text class="bk" x="560" y="26">ПРАВЫЙ БЕРЕГ</text><text class="bk2" x="560" y="42">Рудничный район</text>
+<text class="bk" x="24" y="540">ЛЕВЫЙ БЕРЕГ</text><text class="bk2" x="150" y="540">Центральный, Заводский, Ленинский районы</text>
+<text class="bk2" x="190" y="92" transform="rotate(22 190 92)">р. Томь</text>
+<polygon points="60,78 84,84 70,92" fill="var(--mute)" transform="rotate(-38 70 84)"/>
+<text class="bk2" x="22" y="26">С ↑</text>
+<g id="streetsvg"></g></svg>
+<p class="note">Это схема, а не точная карта: расположение улиц условное, как на схеме метро. Томь течёт на северо-запад, поэтому левый берег внизу, а правый вверху. Берега указаны по районам, положение улицы Суворова условное. На телефоне схему можно листать пальцем.</p></div>
+<div class="card" id="card" aria-live="polite"></div>
+</div>
+</div></section>
+<hr class="rule">
+<section id="history"><div class="wrap">
+<h2>История Кемерова</h2>
+<p class="lead">Кемерово — один из самых молодых региональных центров Сибири: своё столетие город отметил в 2018 году. Названия улиц отражают этапы его истории.</p>
+<ul class="tl" id="tl"></ul>
+<h2 style="font-size:26px;margin-top:20px">Как менялись названия</h2>
+<table class="ren"><thead><tr><th>Раньше</th><th>Теперь</th></tr></thead><tbody id="ren"></tbody></table>
+</div></section>
+<hr class="rule">
+<section id="quiz"><div class="wrap">
+<h2>Проверь себя</h2>
+<p class="lead">Пять вопросов: в честь кого или чего названа улица.</p>
+<div class="q" id="qcard" aria-live="polite"></div>
+</div></section>
+<hr class="rule">
+<section id="author"><div class="wrap">
+<h2>Об авторе</h2>
+<div class="two" style="margin-top:22px"><div class="mono" aria-hidden="true">ЯН</div>
+<div><p class="name">Новиков Ярослав Антонович</p>
+<p style="margin:0">Мне 12 лет, я учусь в 6 «А» классе, живу в Кемерове. Этот сайт — продукт моего индивидуального итогового проекта.</p>
+<p class="note">Руководитель проекта: Ларина Татьяна Юрьевна, учитель русского языка и литературы.</p></div></div>
+</div></section>
+<hr class="rule">
+<section id="about"><div class="wrap">
+<h2>О проекте</h2>
+<div class="about" style="margin-top:22px"><div>
+<p style="margin-top:0"><b>Аннотация.</b> Проект «Имена на карте родного края: топонимика улиц города Кемерово» посвящён топонимике — науке о географических названиях. В работе изучено происхождение названий 12 улиц и площадей Кемерова, названия разделены по типам, а результаты собраны в карточках. Этот сайт — приложение к проекту.</p>
+<p>В каждой карточке: тип названия, в честь кого или чего названа улица, годы жизни, чем известен, прежние названия, интересный факт и источник. Если сведений в источниках нет, указано «нет данных».</p>
+<p class="note">Сайт открывается по ссылке или по QR-коду.</p></div>
+<img alt="QR-код со ссылкой на сайт" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKCAAAAABeQknZAAAEP0lEQVR42u3d3Y7bIBAGUKj6/q9Mb1ebRfMDTqP2fHdNY69zxEgjY/BcQ+7kFwKUKFEKSpQoUQpKlCgFJUqUKAUlSpSCEiVKlIISJUpBiRIlSkGJ8t/I7+gLs3vmFZxoBZ9/P24FFxQdd/0HGZUKHCVKQYkSpVT6ymxXlW7bVtBfzuT3x+a4lb3ga7/IqFTgKFEKSpQopdBXRl3Wyh4wgwOq7V7Ul5YvsHohRqUCR4lSUKJEKZ2+8nqy89zV47vnMyoVOEpBiRIlSvnsvjJ6nnIe/nsk/9+oVOAoBSVKlILyI/rKa21adl1NdZ1O+UKXUanAUQpKlChRyhv7yuvTybfuU0bz3tv7ltOoVOAoBSVKlIIS5QdmPj7jnn0UYNc5r0vnNSoVOEpBiRKloHwy6a1AyyuK0lsnJU8cbclU3Vo0/QOMSgWOUlCiRIlSbvSVUbeVnrFfm/4v6j+rW8W3G+BZvACjUoGjRCkoUaKUk76yOo3d3vIz2+YdbzUa7Sm6jEoFjlJQokSJUhJt4q3HEV+6sOz9xO59yOyrM7fnX4d/0KhU4ChRCkqUKOWkr8y+Mb18P7J7/3Ik+9P00vrVvECjUoGjRCkoUaL8r3N9K9D0myer62my9yfTjXH0znajUoGjFJQoUaKUJ/vK7HKc7Req/eauj6w+t9lex+P5SgWOUlCiRIlSbvSV2TcHvXxevf13a5/K9iuMRrOfNCoVOEqUghIlShmF5yvLy2JGcED2levVfjE9n969UWpUKnCUKAUlSpTyQ9Lz4NXl2Om2LPt8ZLfP3G0fFF6A+5UKHKWgRIkSpRTS3meo/aLydemE2cb28ecqjUoFjhKloESJUjJ9ZfU2YvnA7Px497zR5/VfZlQqcJQoBSVKlNLoK8dpu/eu/rG9jud4oY9RqcBRohSUKFFK435l+rnKbH9Y7Re79yFfvtddsWRUKnCUKAUlSpTyQ66t2xm7tu30scXdcat5gdsTV3dUMioVOEqUghIlSvnaXGXvV9763vH6nGqbuO0356U/bFQqcJQoBSVKlDIuzoNv27LT5yiz51+H5wsv0Dy4AkeJUlCiRCknfeX5Xwj6wGoD2+1XV/UCR/YERqUCR4lSUKJEKQfvcQwTPV8Zrb+prsOpTtin57k9X6nAUQpKlChRCsqPatGrjercfVDdovN0j9LyD5nB5279KnCUKAUlSpRyo6+Muq/20qdd31l9FVG01L79CiOjUoGjFJQoUaKUJ/rK68n2gyt5fHnF/CyewKhU4ChRCkqUKOWv9pXZrZSy087r8O+FjaktmxQ4SkGJEiVKebKvXN0Doq3io3nv7isvV/bCjEoFjlJQokSJUt7RV7a7r1tbdWafq0zPg2cbVkvrFThKQYkSJUrJdGuLgVGJEqWgRIkSpaBEiVJQokSJUlCiRCkoUaJEKShRohSUKFGiFJQoUcrX/AFOxAOp5ZDXMgAAAABJRU5ErkJggg=="></div>
+<div class="facts"><div><b>12</b>улиц и площадей</div><div><b>5</b>типов названий</div><div><b>7</b>дат в истории</div><div><b>1721</b>год открытия угля</div></div>
+</div></section>
+<hr class="rule">
+<section id="real"><div class="wrap">
+<h2>Карта проекта в Яндексе</h2>
+<p class="lead">Карта из Конструктора карт Яндекса с метками проекта. Нужен интернет.</p>
+<div class="realmap">
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8d315cde0f5260a9071aa078e52258f344ad55af567427156c170c244280b8d3&amp;width=1200&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">Индивидуальный итоговый проект «Имена на карте родного края». Новиков Ярослав Антонович, 6 «А» класс. Кемерово, 2026–2027 уч. год.</div></footer>
+<script>
+var T={h:["В честь человека","var(--h)"],e:["Эпоха, идея","var(--e)"],g:["География","var(--g)"],p:["Профессия","var(--p)"],i:["Образное название","var(--i)"]};
+var S=[
+{id:"len",rx:"^проспект Ленина$",n:"проспект Ленина",t:"h",who:"Владимир Ильич Ленин",yrs:"1870–1924",k:"Основатель Советского государства.",old:"улица Магистральная",f:"Это центральная магистраль города. Названия в честь руководителей государства были обычны для городов СССР.",src:"Захарова И. В. Из истории архитектуры города Кемерово [4]",pt:[[50,230],[250,230],[330,310],[520,310],[560,345]],l:[60,220]},
+{id:"sov",rx:"^Советский проспект$",n:"Советский проспект",t:"e",who:"Советская власть",yrs:"не связано с человеком",k:"Название эпохи, а не человека.",old:"улица Советская",f:"Прокладка главной улицы города, Советской, началась в 1928 году, когда город ещё назывался Щегловском.",src:"Зюзьков Ю. Улица Зодчего [5]; Захарова И. В. [4]",pt:[[50,310],[200,310],[270,375],[560,375]],l:[60,300]},
+{id:"kuz",rx:"^Кузнецкий проспект$",n:"Кузнецкий проспект",t:"g",who:"Кузнецкая земля (Кузбасс)",yrs:"не связано с человеком",k:"Название связывает улицу с историей всего Кузбасса, где добывают уголь.",old:"улица Московская, затем улица Вокзальная",f:"Улица несколько раз меняла название: Московская, Вокзальная, Кузнецкий проспект.",src:"Зюзьков Ю. Улица Зодчего [5]",pt:[[140,160],[140,420],[190,470],[310,470]],l:[200,460]},
+{id:"sha",rx:"^проспект Шахт[её]ров$",n:"проспект Шахтёров",t:"p",who:"шахтёры Кузбасса",yrs:"не связано с человеком",k:"Название прославляет людей, которые добывают уголь. Проспект находится в Рудничном районе.",old:"нет данных",f:"Именно на территории Кемерова рудознатец Михайло Волков впервые открыл кузбасский уголь.",src:"Никольская церковь Кемрудника // Православные чтения [7]",pt:[[450,40],[450,100],[520,150],[640,150]],l:[462,62]},
+{id:"ves",rx:"^(Весенняя улица|улица Весенняя)$",n:"улица Весенняя",t:"i",who:"время года — весна",yrs:"не связано с человеком",k:"Образное название. Одна из старейших и самых живописных улиц центра, любимый городской променад.",old:"нет данных",f:"Первые упоминания об улице относятся к 1950-м годам. Точное происхождение названия предстоит уточнить.",src:"Достопримечательности Кемерова, Tripster [1]",pt:[[40,370],[110,370]],l:[42,360]},
+{id:"kra",rx:"^(Красноармейская улица|улица Красноармейская)$",n:"улица Красноармейская",t:"e",who:"Красная армия",yrs:"не связано с человеком",k:"Название связано с эпохой, в которую улица получила имя. Улица находится в Центральном районе.",old:"нет данных",f:"Улица упоминается в краеведческой статье среди улиц, появившихся при застройке Щегловска и Кемерова.",src:"Зюзьков Ю. Улица Зодчего [5]",pt:[[360,420],[470,420],[520,470],[690,470]],l:[365,410]},
+{id:"suv",rx:"^(улица Суворова|Суворова улица)$",n:"улица Суворова",t:"h",who:"Александр Васильевич Суворов",yrs:"1730–1800",k:"Великий русский полководец.",old:"нет данных",f:"Суворов родился в 1730 году в семье дворянина и умер в Санкт-Петербурге в 1800 году.",src:"Суворов Александр, Культура.РФ [11]",pt:[[640,370],[700,370],[750,420]],l:[640,360]},
+{id:"myz",rx:"Мызо",n:"улица Мызо",t:"h",who:"Владимир Иванович Мызо",yrs:"нет данных",k:"Герой Советского Союза, участник Великой Отечественной войны.",old:"нет данных",f:"Улица находится в частном секторе Центрального района. Рядом с ней и улицей Степанова есть мемориальная стела.",src:"Черкасова О. За Родину, за Днепр… [12]",pt:[[330,515],[500,515]],l:[332,505]},
+{id:"ste",rx:"Степанова",n:"улица Н. Степанова",t:"h",who:"Николай Петрович Степанов",yrs:"нет данных",k:"Герой Советского Союза, участник Великой Отечественной войны.",old:"нет данных",f:"Улица находится в Центральном районе. Вместе с улицей Мызо носит имя героя-земляка; на улицах есть мемориальная стела.",src:"Черкасова О. За Родину, за Днепр… [12]",pt:[[560,515],[740,515]],l:[560,505]},
+{id:"vol",rx:"Волкова",n:"площадь Волкова",t:"h",who:"Михайло Волков",yrs:"нет данных",k:"Рудознатец. В 1721 году нашёл «Горелую гору» — выход горящего угля вблизи нынешнего Кемерова.",old:"нет данных",f:"На площади стоит памятник первооткрывателю кузнецкого угля. Горелую гору называют ещё Красной горой.",src:"Достопримечательности Кемерово [2]; Никольская церковь Кемрудника [7]",pt:[[600,205]],l:[618,210]},
+{id:"pri",rx:"^(Притомская набережная|набережная Притомская)$",n:"Притомская набережная",t:"g",who:"река Томь",yrs:"не связано с человеком",k:"Набережная идёт вдоль реки Томь. В названии спрятан гидроним — название реки.",old:"нет данных",f:"Два промышленных района города на разных берегах Томи когда-то связывала канатная дорога.",src:"Захарова И. В. Из истории архитектуры города Кемерово [4]",pt:[[40,95],[200,150],[340,200],[500,282],[640,318],[780,348]],l:[350,196]},
+{id:"str",rx:"^бульвар Строителей$",n:"бульвар Строителей",t:"p",who:"строители",yrs:"не связано с человеком",k:"Название прославляет людей созидательной профессии, которые строят город.",old:"нет данных",f:"После войны, в 1948 году, для города был составлен генеральный план его развития.",src:"Ермолина А. М. Архитектурно-планировочное развитие города Кемерово [3]",pt:[[400,255],[480,255]],l:[400,247]}
+];
+var TL=[["1721","Рудознатец Михайло Волков находит «Горелую гору» — выход горящего угля.","площадь Волкова"],["1907","На правом берегу Томи заложены первые штольни Кемеровского рудника.","проспект Шахтёров"],["1918","Рабочий посёлок получает статус города и название Щегловск.",""],["1928","Начинается прокладка главной улицы города — Советской.","Советский проспект"],["1932","Щегловск переименован в Кемерово.",""],["1943","Образована Кемеровская область.",""],["1948","Составлен генеральный план развития города.","бульвар Строителей"]];
+var RN=[["улица Магистральная","проспект Ленина"],["улица Советская","Советский проспект"],["улица Московская, затем улица Вокзальная","Кузнецкий проспект"],["город Щегловск","город Кемерово (с 1932 года)"]];
+var $=function(x){return document.getElementById(x)};
+function esc(s){return s}
+Object.keys(T).forEach(function(k){var s=document.createElement("span");s.style.setProperty("--c",T[k][1]);s.textContent=T[k][0];$("legend").appendChild(s)});
+var NS="http://www.w3.org/2000/svg",cur=null;
+function el(n,at,p){var e=document.createElementNS(NS,n);for(var k in at)e.setAttribute(k,at[k]);if(p)p.appendChild(e);return e}
+var g=$("streetsvg");
+S.forEach(function(s){
+ var o=el("g",{"class":"sg",tabindex:0,role:"button","aria-label":s.n,"data-id":s.id},g);o.style.setProperty("--c",T[s.t][1]);
+ if(s.pt.length>1)el("polyline",{"class":"ln",points:s.pt.map(function(p){return p.join(",")}).join(" ")},o);else el("circle",{"class":"dot",cx:s.pt[0][0],cy:s.pt[0][1],r:15},o);
+ var t=el("text",{"class":"lb",x:s.l[0],y:s.l[1]},o);t.textContent=s.n;
+ o.onclick=function(){pick(s.id)};o.onkeydown=function(ev){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();pick(s.id)}};s.node=o});
+function pick(id){cur=id;S.forEach(function(s){s.node.classList.toggle("sel",s.id===id)});show();if(innerWidth<=860){try{$("card").scrollIntoView({behavior:"smooth",block:"nearest"})}catch(e){}}}
+function show(){var c=$("card");
+ if(!cur){c.innerHTML='<h3>Выберите улицу</h3><p style="color:var(--mute)">Нажмите на любую линию на схеме. В карточке будут тип названия, в честь кого или чего названа улица, годы жизни, чем известен, прежние названия, интересный факт и источник.</p>';return}
+ var s=S.filter(function(x){return x.id===cur})[0];c.style.setProperty("--c",T[s.t][1]);
+ c.innerHTML='<h3>'+s.n+'</h3><dl class="dl"><dt>Тип названия</dt><dd><span class="tag">'+T[s.t][0]+'</span></dd><dt>В честь кого или чего</dt><dd>'+s.who+'</dd><dt>Годы жизни</dt><dd>'+s.yrs+'</dd><dt>Чем известен</dt><dd>'+s.k+'</dd><dt>Прежние названия</dt><dd>'+s.old+'</dd><dt>Интересный факт</dt><dd>'+s.f+'</dd><dt>Источник</dt><dd>'+s.src+'</dd></dl>'}
+show();
+TL.forEach(function(r){var li=document.createElement("li");li.innerHTML='<b>'+r[0]+'</b>'+r[1]+(r[2]?'<br><span>Связано с улицей: '+r[2]+'</span>':'');$("tl").appendChild(li)});
+RN.forEach(function(r){var tr=document.createElement("tr");tr.innerHTML='<td>'+r[0]+'</td><td>'+r[1]+'</td>';$("ren").appendChild(tr)});
+var Q=[],qi=0,sc=0;
+function shuffle(a){return a.slice().sort(function(){return Math.random()-.5})}
+function startQ(){Q=shuffle(S).slice(0,5);qi=0;sc=0;ask()}
+function ask(){var c=$("qcard");c.style.setProperty("--c","var(--g)");
+ if(qi>=Q.length){c.innerHTML='<h3>Результат: '+sc+' из '+Q.length+'</h3><p>'+(sc>=4?"Отлично! Вы хорошо знаете названия улиц.":"Загляните в карточки улиц и попробуйте ещё раз.")+'</p><button class="again" id="ag">Ещё раз</button>';$("ag").onclick=startQ;return}
+ var s=Q[qi],opts=shuffle([s.who].concat(shuffle(S.filter(function(x){return x.who!==s.who}).map(function(x){return x.who})).slice(0,2)));
+ c.innerHTML='<span class="tag">Вопрос '+(qi+1)+' из '+Q.length+'</span><h3>'+s.n+'</h3><p style="margin:0"><b>В честь кого или чего названа эта улица?</b></p><div class="opts"></div><div id="fb"></div>';
+ var box=c.querySelector(".opts");
+ opts.forEach(function(o){var b=document.createElement("button");b.textContent=o;b.onclick=function(){
+  [].forEach.call(box.children,function(x){x.disabled=true;if(x.textContent===s.who)x.className="ok"});
+  var right=o===s.who;if(right)sc++;else b.className="no";
+  $("fb").innerHTML='<p><b>'+(right?"Верно!":"Не совсем.")+'</b> '+s.k+' '+s.f+'</p><button class="again" id="nq">'+(qi+1<Q.length?"Дальше":"Показать результат")+'</button>';
+  $("nq").onclick=function(){qi++;ask()}};box.appendChild(b)})}
+function isDark(){var d=document.documentElement.getAttribute("data-theme");return d?d==="dark":matchMedia("(prefers-color-scheme:dark)").matches}
+function label(){$("theme").textContent=isDark()?"☀":"☾"}
+try{var sv=localStorage.getItem("kem-theme");if(sv)document.documentElement.setAttribute("data-theme",sv)}catch(e){}
+$("theme").onclick=function(){var n=isDark()?"light":"dark";document.documentElement.setAttribute("data-theme",n);try{localStorage.setItem("kem-theme",n)}catch(e){}label()};
+label();startQ();
+</script>
+</body>
+</html>
